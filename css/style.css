@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding:0;
+
+}
+  body{
+    font-family: Old English Text MT;
+    font-weight: 100;
+
+  }
+
+
+/* Ajustement de la section wrapper */
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: lighter;
+  font-size: 40px;
+}
+/* Ajustement du fond */
+.section-bvn{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100;
+  left: 100;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.section-bvn video{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left:0;
+  z-index: -100;
+}
+
+/* Placement du texte */
+.contenue{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.fly-in-text{
+  list-style: none;
+}
+
+/* Placement du texte  */
+.fly-in-text li{
+  font-family: American Typewriter, serif;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 5em;
+  color: rgb(253, 253, 253);
+  opacity: 1;
+  transition: all 3s ease;
+}
+/* Placement du boutton entrer */
+.fly-in-text li:nth-child(5) {
+  margin-right: 0;
+
+}
+/* Placement du boutton entrer */
+.Bouton {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  color: rgb(250, 255, 249);
+  opacity: 1;
+  margin-top: 30px;
+  transition: all 1s ease 3s;
+}
+
+/* ajustement texte  */
+.contenue-cacher .fly-in-text li { opacity:0;}
+.contenue-cacher .fly-in-text li:nth-child(1) {transform :translate3d(-100px,0,0);}
+.contenue-cacher .fly-in-text li:nth-child(2) {transform :translate3d(-80px,0,0);}
+.contenue-cacher .fly-in-text li:nth-child(3) {transform :translate3d(-60px,0,0);}
+.contenue-cacher .fly-in-text li:nth-child(4) {transform :translate3d(-40px,0,0);}
+.contenue-cacher .fly-in-text li:nth-child(5) {transform :translate3d(-20px,0,0);}
+.contenue-cacher .fly-in-text li:nth-child(6) {transform :translate3d(0px,0,0);}
+.contenue-cacher .fly-in-text li:nth-child(7) {transform :translate3d(20px,0,0);}
+
+.contenue-cacher .Bouton{ opacity: 0; transform: translate3d(0,-30px,0);}
+
+
+@keyframes slides {
+  from{
+        transform: translateY(200px);
+        opacity: 0;
+  }
+  to { transform: translateY(0);
+    opacity: 1;
+
+  }
+}

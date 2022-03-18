@@ -1,0 +1,58 @@
+.scroll {
+    overflow: auto; 
+    font-size: xx-large;
+    scrollbar-width: 1px;
+    color: blueviolet;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll; 
+    width: 45%;
+    height: 80%;
+    margin-left: 5%;
+    overflow:scroll;
+    border: thin rgb(0, 0, 0) solid;
+    padding: 5px;
+    text-align: justify;
+  }
+
+div::-webkit-scrollbar{display: none;}
+
+body{background-image: url("../medias/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+    ;}
+
+video{
+  position: fixed;
+  top:-10%;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 9;
+  size-adjust:inherit();
+  object-fit: fill;
+  width: 100%;
+}
+
+.lire img{
+  animation: bonjour 5s;
+    
+  opacity: 1;
+  position: fixed; 
+  left: 25%;
+  top: 40%;
+  z-index: 10;
+
+}
+  .continuer img{
+    animation: bonjour 5s;
+    
+    opacity: 1;
+    position: fixed; 
+    left: 65%;
+    top: 40%;
+    z-index: 10; 
+  }
+  @keyframes bonjour { 
+    0%{opacity: 0;} 
+    100%{opacity: 1;}}
